@@ -1,0 +1,33 @@
+:root{
+    --bg-primary:#b62b2b;
+    --bg-secondary:#761111;
+    --bg-tertiary:#8E4B4B;
+    --bg-light:#fff;
+    --bg-dark:#000;
+    --bg-dark-transp:#00000080;
+    --primary-color:#b62b2b;
+    --secondary-color:#761111;
+    --tertiary-color:#8E4B4B;
+    --font-light:#fff;
+    --font-dark:#000;
+    --transition: .5s;
+    --font-family:'Ubuntu', sans-serif;
+    --font-size:1rem;
+    --spacing-size:1rem;
+    --pading:1rem;
+    --maring:1rem;
+    --gap:1rem;
+    --border:1rem;
+    --border-radius:1rem;
+    --max-width:1800px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+}

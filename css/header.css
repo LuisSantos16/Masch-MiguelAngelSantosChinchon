@@ -1,0 +1,96 @@
+
+.header{
+    background-color: var(--bg-primary);
+    & .conta-header{
+        max-width: var(--max-width);
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        border-bottom: calc(var(--border) / 16) solid var(--bg-dark-transp);
+        & .logo{
+            & h1{
+                padding: var(--border);
+                color: var(--font-light);
+                letter-spacing: calc(var(--spacing-size) / 4);
+            }
+        }
+        & .lista-bar{
+            display: none;
+        }
+        & .navbar{
+            & ul{
+                list-style: none;
+                display: flex;
+                & .cerrar{
+                    display: none;
+                }
+                & a{
+                    font-weight: bold;
+                    text-decoration: none;
+                    padding: calc(var(--pading) * 2.5) calc(var(--pading) * 1.25);
+                    transition: var(--transition);
+                    color: var(--font-light);
+                    &:hover{
+                        background-color: var(--bg-light);;
+                        color: var(--bg-primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1250px){
+    .header{
+        & .conta-header{
+            justify-content: space-between;
+            padding: 0 calc(var(--pading) * 1.25);
+            & .navbar{
+                position: relative;
+                top: -100%;
+                left: 0;
+                padding: calc(var(--pading) * 1.75) 0;
+                & ul{
+                    gap: calc(var(--gap) * 2.5);
+                    & .cerrar{
+                        display: block;
+                        width: 20px;
+                        font-size: calc(var(--font-size) * 1.25);
+                        color: var(--font-light);
+                    }
+                    & a{
+                        padding: 0;
+                        &:hover{
+                            background-color: inherit;
+                            color: var(--font-light);
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            #lista-barid{
+                display: block;
+                float: right;
+                font-size: calc(var(--font-size) * 1.25);
+                color: var(--font-light);
+                cursor: pointer;
+            }
+            .lista-open{
+                top: 0;
+            }
+            #navbarid{
+                background-color: var(--bg-primary);
+                position: absolute;
+                width: 100%;
+                transition: var(--transition);
+                & ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
