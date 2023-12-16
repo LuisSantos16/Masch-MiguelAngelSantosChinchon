@@ -11,14 +11,14 @@
         border-bottom: calc(var(--border) / 16) solid var(--bg-dark-transp);
         & .logo{
             & h1{
-                padding: var(--pading) 0;
+                padding: var(--padding) 0;
                 color: var(--font-light);
                 letter-spacing: calc(var(--spacing-size) / 4);
             }
             @media(width <= 650px){
                 & h1{
                     font-size: calc(var(--font-size) * 1.25);
-                    padding: calc(var(--pading) * 1.25) 0;
+                    padding: calc(var(--padding) * 1.25) 0;
                 }
             }
         }
@@ -35,7 +35,7 @@
                 & a{
                     font-weight: bold;
                     text-decoration: none;
-                    padding: calc(var(--pading) * 2.5) calc(var(--pading) * 1.25);
+                    padding: calc(var(--padding) * 2.5) calc(var(--padding) * 1.25);
                     transition: var(--transition);
                     color: var(--font-light);
                     &:hover{
@@ -52,15 +52,16 @@
     .header{
         & .conta-header{
             justify-content: space-between;
-            padding: 0 calc(var(--pading) * 1.25);
+            padding: 0 calc(var(--padding) * 1.25);
             & .navbar{
                 position: relative;
                 top: -100%;
                 left: 0;
-                padding: calc(var(--pading) * 1.75) 0;
+                padding: calc(var(--padding) * 1.75) 0;
                 & ul{
                     gap: calc(var(--gap) * 2.5);
                     & .cerrar{
+                        cursor: pointer;
                         display: block;
                         width: 20px;
                         font-size: calc(var(--font-size) * 1.25);
