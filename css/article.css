@@ -52,6 +52,75 @@
     }
 }
 
+.container_servicios{
+    background: linear-gradient(var(--bg-dark-transp_intense),var(--bg-dark-transp_intense)),url(../img/servicos_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: calc(var(--padding) * 5) 0;
+    & .conta_servicios{
+        max-width: 1800px;
+        margin: auto;
+        & h2{
+            text-align: center;
+        }
+        & .cont_servicios{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: calc(var(--gap) * 2.5);
+            max-width: 1300px;
+            margin: auto;
+            margin-top: calc(var(--margin) * 3.75);
+            & .servicio{
+                width: 400px;
+                background-color: var(--bg-primary);
+                padding: calc(var(--padding) * 2.5) calc(var(--padding) * 1.875);
+                border-top-left-radius: calc(var(--border) * 2.5);
+                border-top-right-radius: calc(var(--border) * 2.5);
+                border-bottom-left-radius: calc(var(--border) * 2.5);
+                border-bottom-right-radius: calc(var(--border) * 6.25);;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: calc(var(--gap) * 2.5);
+                transition: var(--transition);
+                &:hover{
+                    background-color: white;
+                    color: var(--primary-color);
+                }
+                &:hover .icon_servicio{
+                    background-color: var(--bg-primary);
+                    color: white;
+                    transform:rotate(360deg);
+                }
+                & .icon_servicio{
+                    padding: calc(var(--padding) * 1.25);
+                    background-color: white;
+                    border-radius: 50%;
+                    transform: rotate(0);
+                    color: var(--primary-color);
+                    transition: var(--transition);
+                }
+                & p{
+                    line-height: calc(var(--spacing-size) * 1.5);
+                    text-align: justify;
+                    font-size: calc(var(--font-size) * 0.875);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
 @media(width <=950px){
     .cont_info-miguel{
         flex-wrap: wrap;
