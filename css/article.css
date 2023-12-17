@@ -1,0 +1,83 @@
+
+.container_info-miguel{
+    background-color: var(--bg-primary);
+    padding: calc(var(--padding) * 5) calc(var(--padding) / 1.6);
+    & .conta_info-miguel{
+        max-width: 1800px;
+        margin: auto;
+        & .cont_info-miguel{
+            background-color: var(--bg-light);
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            border-top-left-radius: calc(var(--border) * 3.125);
+            border-bottom-right-radius: calc(var(--border) * 3.125);
+            overflow: hidden;
+            & .img_miguel{
+                width: 400px;
+                & img{
+                    width: 100%;
+                }
+            }
+            & .content_miguel{
+                width: 800px;
+                padding: calc(var(--padding) * 1.25);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: calc(var(--gap) * 2.5);
+                & p{
+                    max-width: 600px;
+                    text-align: justify;
+                    line-height: calc(var(--spacing-size) * 1.5);
+                }
+                & a{
+                    text-decoration: none;
+                    color: white;
+                    background-color: var(--bg-tertiary);
+                    padding: calc(var(--padding) / 1.6);
+                    border-radius: calc(var(--border) / 1.6);
+                }
+                & span{
+                    display: flex;
+                    align-items: center;
+                    gap: calc(var(--gap) / 1.6);
+                    & .bi-geo-alt-fill{
+                        color: var(--tertiary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(width <=950px){
+    .cont_info-miguel{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+}
+
+@media(width <=650px){
+    .container_info-miguel{
+        & .conta_info-miguel{
+            & .cont_info-miguel{
+                padding: 0;
+                & .content_miguel{
+                    display: grid;
+                    gap: calc(var(--gap) * 1.5);
+                    & h2{
+                        text-align: center;
+                        font-size: calc(var(--font-size) * 1.25);
+                   }
+                   & p{
+                        font-size: calc(var(--font-size) * 0.875);
+                        line-height: calc(var(--spacing-size) * 1.25);
+                   }
+                }
+            }
+        }
+    }
+}

@@ -65,7 +65,7 @@
         & .container-figcation_banner{
             & .figcation_banner{
                gap: calc(var(--gap) * 1.25);
-               font-size: 13px;
+               font-size: calc(var(--font-size) * 0.875);
                & h2{
                     font-size: calc(var(--font-size) * 1.25);
                }
