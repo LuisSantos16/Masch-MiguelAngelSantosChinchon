@@ -29,7 +29,7 @@
             }
             & .figcation_contact{
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
                 align-items: center;
                 flex-wrap: wrap-reverse;
                 gap: calc(var(--gap) * 2.5);
@@ -46,7 +46,9 @@
                     }
                 }
                 & ul{
+                    width: 100%;
                     display: flex;
+                    justify-content: center;
                     gap: calc(var(--gap) * 1.25);
                     list-style: none;
                     & a{
@@ -62,15 +64,23 @@
     .container_banner{
         & .container-figcation_banner{
             & .figcation_banner{
-               gap: 20px;
+               gap: calc(var(--gap) * 1.25);
                font-size: 13px;
                & h2{
-                    font-size: 20px;
+                    font-size: calc(var(--font-size) * 1.25);
                }
                & .figcation_contact{
-                    margin-top: 20px;
+                    margin-top: calc(var(--margin) * 1.25);
+                    gap: calc(var(--gap) * 1.25);
+                    & ul{
+                        margin-bottom: calc(var(--margin) * 1.25);
+                    }
                     & a{
                         width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: calc(var(--gap) / 4);;
                     }
                }
             }
