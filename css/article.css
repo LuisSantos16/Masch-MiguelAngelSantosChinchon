@@ -71,13 +71,14 @@
             flex-wrap: wrap;
             justify-content: space-between;
             gap: calc(var(--gap) * 2.5);
-            max-width: 1300px;
+            max-width: 1400px;
             margin: auto;
             margin-top: calc(var(--margin) * 3.75);
             & .servicio{
                 width: 400px;
                 background-color: var(--bg-primary);
                 padding: calc(var(--padding) * 2.5) calc(var(--padding) * 1.875);
+                margin:  0 calc(var(--margin) / 1.6);
                 border-top-left-radius: calc(var(--border) * 2.5);
                 border-top-right-radius: calc(var(--border) * 2.5);
                 border-bottom-left-radius: calc(var(--border) * 2.5);
@@ -122,9 +123,6 @@
         & .conta_servicios{
             & .cont_servicios{
                 justify-content: center;
-                & .servicio{
-                    margin: 0 calc(var(--maring) / 1.6);
-                }
             }
         }
     }
@@ -164,6 +162,9 @@
                    & a{
                         text-align: center;
                         font-size: calc(var(--font-size) * 0.875);
+                        & .bi-envelope-fill{
+                            display: none;
+                        }
                    }
                    & span{
                         justify-content: center;
