@@ -117,15 +117,31 @@
 
 
 
-
-
-
+@media(width <=1320px){
+    .container_servicios{
+        & .conta_servicios{
+            & .cont_servicios{
+                justify-content: center;
+                & .servicio{
+                    margin: 0 calc(var(--maring) / 1.6);
+                }
+            }
+        }
+    }
+}
 
 @media(width <=950px){
     .cont_info-miguel{
         flex-wrap: wrap;
         justify-content: center;
-        padding: 20px 0px;
+        padding: calc(var(--padding) * 1.25) 0;
+    }
+    .container_servicios{
+        & .conta_servicios{
+            & .cont_servicios{
+                justify-content: center;
+            }
+        }
     }
 }
 
@@ -144,6 +160,13 @@
                    & p{
                         font-size: calc(var(--font-size) * 0.875);
                         line-height: calc(var(--spacing-size) * 1.25);
+                   }
+                   & a{
+                        text-align: center;
+                        font-size: calc(var(--font-size) * 0.875);
+                   }
+                   & span{
+                        justify-content: center;
                    }
                 }
             }
